@@ -812,23 +812,22 @@ header {
 swiper-container.mySwiper2 {
   width: 100%;
   max-width: 9999px;
-  height: 100%;
-  max-height: 695px;
+  height: 900px;
   cursor: grab;
   margin: 0 auto !important;
 }
 swiper-slide.swiper2 {
   width: 100%;
-  max-width: 970px;
+  max-width:860px;
   border-radius: 30px;
   margin-left: 0px;
   padding-bottom: 50px;
 }
 .swiper2 img {
   width: 100% !important;
-  max-width: 100% !important;
+  max-width: 850px !important;
   margin: auto;
-  height: 100%;
+  border-radius: 25px;
   justify-content: start;
   object-fit: cover !important;
   object-position: center;
@@ -838,7 +837,7 @@ swiper-slide.swiper2 {
     padding: 50px 0;
 }
 swiper-container.mySwiper2 {
-  max-height: 310px;
+  height: 380px;
   cursor: grab;
   margin: 0 !important;
 }
@@ -847,9 +846,8 @@ swiper-slide.swiper2 {
   margin-left: 0px;
 }
 .swiper2 img {
-  width: 410px !important;
+  max-width: 450px !important;
   margin: auto;
-  height: 275px;
 }
 }
 .bgs-web{
@@ -1259,6 +1257,10 @@ footer{
         margin: auto;
         text-align: center;
         margin-bottom: 36px;
+    }
+    .footersocials ul {
+        text-align: center;
+        justify-content: center;
     }
     .rights{
         flex-direction: column;
