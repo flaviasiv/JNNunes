@@ -559,7 +559,7 @@ header {
         padding-left: 5px;
     }
 }
-.bg-blue button{
+.bg-blue button, .reviewscontainer button{
     display: flex;
     justify-content: center;
     list-style: none;
@@ -612,6 +612,8 @@ header {
 .abouttext h2{
     display: flex;
     flex-direction: column;
+    font-size: 32px;
+    font-weight: 600;
 }
 .abouttext p{
     max-width: 505px;
@@ -869,17 +871,17 @@ swiper-slide.swiper2 {
     margin: auto;
     height: 100%;
     background-color: #f8efcd;
-    height:850px;
+    height:890px;
 }
 .review{
     display: block;
     width: 100%;
-    max-width: 1340px;
+    max-width: 9999px;
     margin: auto;
     padding: 0;
 }
 .reviewstitle{
-    color: #092041;
+    color: #082F42;
     text-align: center;
 }
 .reviewstitle h2{
@@ -903,9 +905,12 @@ swiper-slide.swiper2 {
     font-size: 16px;
     font-weight: 600px;
 }
+.reviewsgrid{
+    margin-bottom: 30px;
+}
 .mySwiper3{
     width: 100%;
-    max-width: 1400px;
+    max-width:9990px;
     height: 100%;
     max-height: 390px;
     cursor: pointer;
@@ -1120,7 +1125,7 @@ footer{
     max-width: 9999px;
     margin: auto;
     height: auto;
-    background-color: #092041;
+    background-color: #082F42;
     color: #D3C58D;
 }
 .footergrid{
@@ -1207,7 +1212,7 @@ footer{
     max-width: 9999px;
     margin: auto;
     padding: 34px 0;
-    background-color: #092041;
+    background-color: #082F42;
     align-items: center;
     text-align: center;
     border-top: 1px solid #D3C58D;
@@ -1263,4 +1268,9 @@ footer{
         font-size: 12px;
         margin-bottom: 10px;
     }
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
 }
