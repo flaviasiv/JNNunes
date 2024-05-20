@@ -55,7 +55,7 @@ header {
     padding: 20px 50px 20px 50px;
 } 
 .menu-links{
-    color:#D3C58D;
+    color:#fff;
     display: flex;
     justify-content: space-between;
     align-items: center;   
@@ -89,7 +89,7 @@ header {
     letter-spacing:1px
 }
 .menu-linksbtn a:hover{
-    color: rgb(214, 202, 152);
+    color: #ffffffc5;
     transition: 0.5s;
 }
 .menusocial{
@@ -729,7 +729,7 @@ header {
     margin: auto;
     padding: 70px 0px;
     height: auto;
-    background-color: #D3C58D;
+    background-color: #fff;
 }
 .portifolio{
     width: 100%;
@@ -738,7 +738,7 @@ header {
 }
 .portifoliotitle{
     font-family: 'Urbanist', sans-serif;
-    color: #fff
+    color: #003D5A
 }
 .portifoliocontainer .portifoliotitle h2{
     display: flex;
@@ -748,7 +748,7 @@ header {
     justify-content: center;
     font-size: 32px;
     font-style: normal;
-    font-weight: 600;
+    font-weight: 700;
     margin-bottom: 60px;
 }
 .portifoliotitle h2 svg{
@@ -996,7 +996,7 @@ swiper-slide.swiper2 {
     font-weight: 700;
     line-height: 40px;
     margin: auto;
-    color: #D3C58D;
+    color: #fff;
     margin-bottom: 20px;
 }
 .formfooter h2{
