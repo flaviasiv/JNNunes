@@ -333,8 +333,8 @@ header {
   top: 0;
   width: 100%;
   height: 100%;
-  opacity: 0.5;
-  background-color: #000;
+  opacity: 0.6;
+  background-color: #082F42;
   background-repeat: no-repeat;
   background-position: 100%;
   background-size: cover;
@@ -385,14 +385,14 @@ header {
     width: 100%;
     max-width: 9999px;
     margin: auto;
-    padding: 70px 0;
+    padding: 70px 0 0 0;
 }
 .services{
+    display: flex;
     width: 100%;
     max-width: 9999px;
     margin: auto;
     position: relative;
-    display: flex;
     flex-direction: column;
     justify-content: center;
 }
@@ -404,7 +404,7 @@ header {
     max-width: 1400px;
     margin: auto;
     padding-bottom: 60px;
-    color: #D3C58D
+    color: #fff
 }
 .servicestitle p{
     font-size:18px;
@@ -422,16 +422,26 @@ header {
     max-width: 550px;
     margin: auto;
 }
-.servicestitle small img{
-    display: flex;
-    font-weight: 500;
-    margin-right: 8px;
+.servicestitle h3{
+    margin-top: 32px;
+    font-size: 22px;
 }
-.servicestitle small{
-    display: flex; 
-    margin-top: 40px;
+.listareas{
+    display: flex;
+    width: 100%;
+    max-width: 1500px;
+    margin: auto;
     justify-content: center;
-    font-size: 18px
+    gap: 36px;
+    text-align: left;
+    margin-top: 32px;
+    padding-left: 45px;
+    font-size: 16px;
+    line-height: 130%;
+    font-weight: 500;
+}
+.listareas ul{
+    text-decoration: dotted;
 }
 :root {
     --swiper-navigation-color: #eee;
@@ -439,98 +449,59 @@ header {
     --swiper-pagination-bullet-width: 10px;
     --swiper-pagination-bullet-height: 10px;
 }
-/* THE MAINCONTAINER HOLDS EVERYTHING */
-.maincontainer{
+.mySwiper {
     display: flex;
-    justify-content: space-between;
-    width: 100%;
-    max-width: 1500px;
-    margin: auto;
-    height: 373px;
-    padding-left: 70px;
-}
-
-/* THE CARD HOLDS THE FRONT AND BACK FACES */
-.thecard{
-  position: relative;
-  top: 0;
-  left: 0;
-  width: 100%;
-  max-width: 282px;
-  height: 100%;
-  transform-style: preserve-3d;
-  transition: all 0.8s ease;
-  margin-right: 10px;
-}
-
-/* THE PSUEDO CLASS CONTROLS THE FLIP ON MOUSEOVER AND MOUSEOUT */
-.thecard:hover{
-  transform: rotateY(180deg);
-}
-
-/* THE FRONT FACE OF THE CARD, WHICH SHOWS BY DEFAULT */
- .thefront{
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  max-width: 300px;
-  border-radius: 30px;
-  backface-visibility: hidden;
-  overflow: hidden;
-}
-.thefront img{
-  border-radius: 30px;
-    width: 100%;
-    height: 100%;
-}
-
-/* THE BACK FACE OF THE CARD, WHICH SHOWS ON MOUSEOVER */
-.theback{
-    display: flex;
-    flex-direction: column;
     justify-content: center;
-  position: absolute;
-  top: 0;
-  left: 0;
+    align-items: center;
   width: 100%;
-  max-width: 300px;
+  max-width: 1200px;
   height: 100%;
-  border-radius: 30px;
-  backface-visibility: hidden;
-  overflow: hidden;
-  background: #D3C58D;
-  padding: 40px 20px;
-  text-align: center;
-  transform: rotateY(180deg);
+  cursor: grab;
+  margin: auto !important;
+  padding-bottom: 40px;
 }
-
-/*This block (starts here) is merely styling for the flip card, and is NOT an essential part of the flip code */
-.thefront h6, .theback h6{
-  color: #082F42;
-  margin-bottom: 20px;
-  font-size: 20px;
-  font-weight: 800;
-  line-height: 100%;
+.mySwiper:host{
+    --swiper-theme-color: #fff;
+}
+.swiper1 {
+  display: flex;
   text-align: center;
-} 
-
-.thefront p, .theback p{
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 130%;
-  color: #082F42;
+  font-size: 18px;
+  background: #fff;
+  justify-content: center;
+  max-width: 283px;
+  border-radius: 30px;
+  margin-left: 15px;
+  height: 555;
+  margin-bottom: 50px;
+}
+.swiper1 img {
+  width: 100% !important;
+  max-width: none !important;
+  margin: auto;
+  justify-content: start;
+  object-fit: cover !important;
+  object-position: center;
+}
+.swiper1 h6{
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: center;
+    color: #003D5A;
+    margin-top: 25px;
+}
+.swiper1 p{
+    padding: 0 20px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 18px;
+    text-align: center;
+    color: #003D5A;
+    margin: auto;
+    margin-top: 12px;
 }
 @media screen and (max-width:1200px) {
-    .maincontainer{
-        max-width: 1000px;
-        flex-wrap: wrap;
-        margin: auto;
-        row-gap: 28px;
-        padding: 0 70px;
-    }
     .servicescontainer{
         height: 1300px;
     }
@@ -545,11 +516,6 @@ header {
     }
     .servicescontainer{
         height: 2100px;
-    }
-    .maincontainer{
-        justify-content: center;
-        max-width: 500px;
-        padding: 0;
     }
     .listareas{
         justify-content: center;
@@ -616,7 +582,7 @@ header {
     font-weight: 600;
 }
 .abouttext p{
-    max-width: 505px;
+    max-width: 546px;
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
@@ -856,7 +822,7 @@ swiper-slide.swiper2 {
     position: absolute;
     width: 100%;
     object-fit: cover;
-    max-width: 2999px;
+    max-width: 9999px;
     max-height: 100%;
     flex-shrink: 0;
     z-index: 0;
@@ -869,7 +835,7 @@ swiper-slide.swiper2 {
     margin: auto;
     height: 100%;
     background-color: #f8efcd;
-    height:890px;
+    height:790px;
 }
 .review{
     display: block;
@@ -905,6 +871,10 @@ swiper-slide.swiper2 {
 }
 .reviewsgrid{
     margin-bottom: 30px;
+    height: 250px;
+}
+.reviewsgrid script{
+    height: 200px;
 }
 .mySwiper3{
     width: 100%;
@@ -998,6 +968,7 @@ swiper-slide.swiper2 {
     max-height: 1100px;
     margin: auto;
     padding: 0px 0;
+    z-index: 9999;
 }
 .forminfos{
     z-index: 1;
@@ -1036,9 +1007,6 @@ swiper-slide.swiper2 {
     margin: auto;
     color: #D3C58D;
     margin-bottom: 20px;
-}
-.formfooter{
-    background-color: #D3C58D40;    
 }
 .formfooter h2{
     color: #fff;    
@@ -1116,7 +1084,151 @@ form button:hover{
         font-size: 18px;
     }
 }
+.faqcontainer{
+    height: auto;
+    background-color: #E5E5E5;
+    padding-bottom: 90px;
+}
+.faqtitle p{
+    font-size: 18px;
+    font-weight: 800;
+}
+.faqtitle small img{
+    display: flex;
+    font-weight: 500;
+    margin-right: 8px;
+}
+.faqtitle small{
+    display: flex; 
+    margin: 30px auto;
+    justify-content: center;
+    font-size: 18px
+}
 
+.mySwiper4{
+    width: 100%;
+    max-width: 9999px;
+    height: 413px;
+    margin: auto;
+}
+.mySwiper4 swiper-slide{
+    width: 100%;
+    max-width: 292px;
+    height: 100%;
+    padding-bottom: 40px;
+}
+/* THE MAINCONTAINER HOLDS EVERYTHING */
+.maincontainer{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1639px;
+    margin: auto;
+    height: 373px;
+    padding: 0 70px;
+}
+
+/* THE CARD HOLDS THE FRONT AND BACK FACES */
+.thecard{
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  max-width: 282px;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: all 0.8s ease;
+}
+
+/* THE PSUEDO CLASS CONTROLS THE FLIP ON MOUSEOVER AND MOUSEOUT */
+.thecard:hover{
+  transform: rotateY(180deg);
+}
+
+/* THE FRONT FACE OF THE CARD, WHICH SHOWS BY DEFAULT */
+ .thefront{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  max-width: 300px;
+  border-radius: 30px;
+  backface-visibility: hidden;
+  overflow: hidden;
+}
+.thefront img{
+  border-radius: 30px;
+    width: 100%;
+    height: 100%;
+}
+
+/* THE BACK FACE OF THE CARD, WHICH SHOWS ON MOUSEOVER */
+.theback{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  max-width: 300px;
+  height: 100%;
+  border-radius: 30px;
+  backface-visibility: hidden;
+  overflow: hidden;
+  background: #082F42;
+  padding: 40px;
+  text-align: center;
+  transform: rotateY(180deg);
+}
+
+/*This block (starts here) is merely styling for the flip card, and is NOT an essential part of the flip code */
+.thefront h6, .theback h6{
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 210%;
+  letter-spacing: 1.5;
+  text-align: center;
+} 
+
+@media screen and (max-width:1200px) {
+    .maincontainer{
+        max-width: 1000px;
+        flex-wrap: wrap;
+        margin: auto;
+        row-gap: 28px;
+        padding: 0 70px;
+    }
+    .servicescontainer{
+        height: 1300px;
+    }
+}
+@media screen and (max-width:900px) {
+    .servicestitle small{
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        padding: 0;
+        margin: 0;
+    }
+    .servicescontainer{
+        height: 2100px;
+    }
+    .maincontainer{
+        justify-content: center;
+        max-width: 500px;
+        padding: 0;
+    }
+    .listareas{
+        justify-content: center;
+        text-align: left;
+        gap: 28px;
+        font-size: 12px;
+        padding-left: 5px;
+    }
+}
 footer{
     position: relative;
     width: 100%;
@@ -1124,7 +1236,7 @@ footer{
     margin: auto;
     height: auto;
     background-color: #082F42;
-    color: #D3C58D;
+    color: #fff;
 }
 .footergrid{
     display: flex;
@@ -1149,18 +1261,17 @@ footer{
 .footermenu1 ul li, .hours ul li{
     list-style: none !important;
     text-decoration: none;
-    color: #D3C58D;
 }
 .footermenu1 ul li a, .hours ul li a {
     text-decoration: none !important;
     font-size: 14px;
     font-style: normal;
     font-weight: 700;
-    color: #D3C58D;
+    color: #fff;
     line-height: 130%;
 }
 .footermenu1 ul li a:hover {
-    color: #D3C58Dad;
+    color: #ffffffaf;
     transition: 0.5s;
 }
 .footermenu1 ul{
@@ -1168,7 +1279,7 @@ footer{
     flex-direction: column;
     justify-content: space-between;
     height: 140px;
-    color: #D3C58D;
+    color: #fff;
     text-decoration: none !important;
 }
 .footerimglogo, .hours{
