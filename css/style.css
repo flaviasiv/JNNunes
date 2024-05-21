@@ -69,7 +69,7 @@ header {
     display: flex;
     margin: 0 auto;
     justify-content:space-between;
-    width:650px;
+    width:690px;
     border-radius: 35px;
     padding: 16px 44px;
     text-align: center;
@@ -550,15 +550,19 @@ header {
     margin: auto;
 }
 .about{
-    position: relative;
-    width: 100%;
-    max-width: 1300px;
-    margin: auto;
     display: flex;
-    flex-direction: column;  
+    position: relative;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
     padding:90px 0 0 0;
     color: #FFF;
     font-family: 'Urbanist';
+}
+.aboutimg img{
+    width: 360px;
+    border-radius: 32px;
 }
 .abouttext{ 
     display: flex;
