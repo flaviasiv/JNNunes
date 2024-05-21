@@ -501,13 +501,7 @@ header {
     margin: auto;
     margin-top: 12px;
 }
-@media screen and (max-width:1200px) {
-    .servicescontainer{
-    }
-}
 @media screen and (max-width:900px) {
-    .servicescontainer{
-    }
     .listareas{
         justify-content: center;
         text-align: left;
@@ -561,7 +555,8 @@ header {
     font-family: 'Urbanist';
 }
 .aboutimg img{
-    width: 360px;
+    width: 100%;
+    max-width: 360px;
     border-radius: 32px;
 }
 .abouttext{ 
@@ -613,6 +608,13 @@ header {
     }
     .about{
         padding:0 20px;
+        flex-direction: column;
+    }
+    .aboutimg img{
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        margin-bottom: 30px;
     }
     /* .about h2{
         margin-bottom: 40px;
