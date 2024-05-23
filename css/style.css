@@ -775,20 +775,20 @@ header {
 swiper-container.mySwiper2 {
   width: 100%;
   max-width: 9999px;
-  height: 900px;
+  height: 670px;
   cursor: grab;
   margin: 0 auto !important;
 }
 swiper-slide.swiper2 {
   width: 100%;
-  max-width:860px;
+  max-width:610px;
   border-radius: 30px;
   margin-left: 0px;
   padding-bottom: 50px;
 }
 .swiper2 img {
   width: 100% !important;
-  max-width: 850px !important;
+  max-width: 600px !important;
   margin: auto;
   border-radius: 25px;
   justify-content: start;
