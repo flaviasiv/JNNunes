@@ -531,7 +531,7 @@ header {
     max-width: 9999px;
     margin: auto;
     height: 400px;
-    background-image: url(../assets/parallaximg.png);
+    background-image: url(../assets/parallaximg.webp);
     background-attachment: fixed;
     background-position: 100%;
     background-size:cover;
@@ -600,7 +600,7 @@ header {
         max-width: 9999px;
         margin: auto;
         height: 400px;
-        background-image: url(../assets/parallaximg-m2.png);
+        background-image: url(../assets/parallaximg-m.png);
         background-attachment: fixed;
         background-position: 100%;
         background-size:cover;
