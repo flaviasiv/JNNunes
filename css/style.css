@@ -33,11 +33,30 @@ header {
     align-items: center;
 }
 .nonebar{
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: relative;
     background-color: transparent;
     width: 200px;
     height: auto;
+}
+.callnow{
+    display: flex;
+    color: #082F42;
+    background-color: #fff;
+    border-radius: 20px;
+    justify-content: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+    align-items: center;
+    text-align: center;
+    padding: 8px 10px;
+    width: 100px;
+    margin-left: 10px;
+    text-decoration: none;
 }
 .navbar{   
     z-index: 999;
@@ -69,7 +88,7 @@ header {
     display: flex;
     margin: 0 auto;
     justify-content:space-between;
-    width:690px;
+    width:670px;
     border-radius: 35px;
     padding: 16px 44px;
     text-align: center;
@@ -132,7 +151,7 @@ header {
     width: 140px;
     text-decoration: none;
 }
-.socialgettouch:hover{
+.socialgettouch:hover, .callnow:hover{
     text-decoration: none;
     transition: 0.5s ease-out;
     letter-spacing: 0.3px;
@@ -148,8 +167,9 @@ header {
   letter-spacing: 1.2px;
 } 
 .btn-toggle{display: none;}
-@media only screen and (max-width: 1000px) {
-    .nonebar{display: none}
+@media only screen and (max-width: 1200px) {
+    .nonebar img{display: none;}
+    .nonebar{margin-bottom: 20px;}
   .box{
     width: fit-content;
     height: 0vh;
@@ -232,7 +252,7 @@ header {
     padding-top: 50px;
     border-bottom-right-radius: 32px;
     border-bottom-left-radius: 32px;
-    height:400px
+    height:470px
   }
   .menu-linksbtn ul{
     background-color: transparent;
@@ -599,7 +619,7 @@ header {
         width: 100%;
         max-width: 9999px;
         margin: auto;
-        height: 400px;
+        height: 250px;
         background-image: url(../assets/parallaximg-m.png);
         background-attachment: fixed;
         background-position: 100%;
@@ -1174,7 +1194,8 @@ form button:hover{
   border-radius: 30px;
   backface-visibility: hidden;
   overflow: hidden;
-  background: #082F42;
+  background: #fff;
+  border: 3px solid #082F42;
   padding: 40px;
   text-align: center;
   transform: rotateY(180deg);
@@ -1182,9 +1203,9 @@ form button:hover{
 
 /*This block (starts here) is merely styling for the flip card, and is NOT an essential part of the flip code */
 .thefront h6, .theback h6{
-  color: #fff;
+  color: #082F42;
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 800;
   line-height: 120%;
   letter-spacing: 1.5;
   text-align: center;
@@ -1232,7 +1253,7 @@ footer{
 .footergrid{
     display: flex;
     width: 100%;
-    max-width: 800px;
+    max-width: 900px;
     margin: auto;
     justify-content: space-between;
     padding: 50px;
@@ -1242,6 +1263,7 @@ footer{
     justify-content: space-between;
     width: 100%;
     max-width: 500px;
+    gap: 15px;
 }
 .footermenu1{
     display: flex;
@@ -1265,7 +1287,7 @@ footer{
     color: #ffffffaf;
     transition: 0.5s;
 }
-.footermenu1 ul{
+.footermenu1 ul, .hours ul{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -1301,6 +1323,9 @@ footer{
     display: flex;
     gap: 10px;
     padding-top: 10px;
+}
+.footersocials h6, .footersocials h5{
+    font-size: 16px;
 }
 .footersocials ul a{
     text-decoration: none;
