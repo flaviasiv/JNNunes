@@ -969,14 +969,8 @@ swiper-slide.swiper2 {
     }
 }
 @media screen and (max-width: 890px) {
-    .review{
-        width: 100%;
-        max-width: 1340px;
-        margin: auto;
-        padding: 0;
-    }
-    .swiper3{
-        padding-left: 10px;
+    .reviewscontainer{
+        height:820px;
     }
 }
 .formgrid{
