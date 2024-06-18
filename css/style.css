@@ -171,9 +171,14 @@ header {
   letter-spacing: 1.2px;
 } 
 .btn-toggle{display: none;}
+.call-m{display:none;}
 @media only screen and (max-width: 1200px) {
-    .nonebar img{display: none;}
-    .nonebar{margin-bottom: 20px;}
+    .nonebar{display: none;}
+    .call-m{
+        position: absolute;
+        display:block;
+        top: 20px;
+    }
   .box{
     width: fit-content;
     height: 0vh;
@@ -246,7 +251,7 @@ header {
       padding: 0px;
   }
   .menu-links{
-    background-color: #082f4250;
+    background-color: #082f42;
     flex-direction: column;
     align-items:center;
     margin-top: 0px;
@@ -256,7 +261,7 @@ header {
     padding-top: 50px;
     border-bottom-right-radius: 32px;
     border-bottom-left-radius: 32px;
-    height:499px
+    height:100%
   }
   .menu-linksbtn ul{
     width: 100%;
@@ -273,6 +278,7 @@ header {
   .menu-linksbtn a{
     background-color: transparent;
     color: #fff;
+    line-height: 100%;
   }
   .menusocial ul{
     background-color: transparent;
@@ -306,6 +312,7 @@ header {
       display:flex
   }
   .navbar {
+    z-index: 1;
   padding:0px 0px;
   }
   #home {
@@ -389,11 +396,12 @@ header {
         object-position: bottom;
     }
     .videop img{
-        max-width: 170px;
+        max-width: 200px;
         width: 100%;
         height: 100%;
         margin: auto;
-        margin-bottom: 8px;
+        margin-bottom:48px;
+        padding-top: 50px;
     }
     .videop{
         flex-direction: column;
@@ -540,8 +548,8 @@ swiper-slider{
         font-size: 12px;
         padding-left: 5px;
     }
-    .mySwiper {
-        max-width:370px;
+    .swiper1 {
+        margin-left: 52px;
     }
 }
 .bg-blue button, .reviewscontainer button{
@@ -630,15 +638,8 @@ swiper-slider{
 } */
 @media screen and (max-width:1100px) {
     .parallaximg{
-        width: 100%;
-        max-width: 9999px;
-        margin: auto;
-        height: 250px;
-        background-image: url(../assets/parallaximg-m.png);
-        background-attachment: fixed;
-        background-position: 100%;
-        background-size:cover;
-        background-repeat: no-repeat;
+        height: 400px;
+        background-attachment: inherit;
     }
     .aboutcontainer{
         max-height: auto;
@@ -840,7 +841,7 @@ swiper-container.mySwiper2 {
 }
 swiper-slide.swiper2 {
   max-width: 410px;
-  margin-left: 0px;
+  margin-left: 17px;
 }
 .swiper2 img {
   max-width: 450px !important;
@@ -1013,7 +1014,7 @@ swiper-slide.swiper2 {
     margin-bottom: 50px;
 }
 .form {
-    z-index: 1;
+    z-index: 9999;
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -1037,21 +1038,25 @@ swiper-slide.swiper2 {
     color: #fff;    
 }
 form {
+    position: relative;
     width: 100%;
     list-style: none;
     display: flex;
     justify-content: right;
     flex-direction: column;
     gap: 10px;
+    z-index: 9999;
 }
 form input, textarea, select{
     width: 100%;
     list-style: none;
     padding: 20px;
     height: 40px;
+    z-index: 9999;
 }
 form input{
     height:  46px;    
+    z-index: 9999;
 }
 form textarea{
     padding: 20px;
@@ -1240,7 +1245,7 @@ form button:hover{
     .maincontainer{
         justify-content: center;
         max-width: 500px;
-        padding: 0;
+        padding: 0 0 0 25px;
     }
     .listareas{
         justify-content: center;
