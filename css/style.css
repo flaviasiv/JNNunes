@@ -256,9 +256,10 @@ header {
     padding-top: 50px;
     border-bottom-right-radius: 32px;
     border-bottom-left-radius: 32px;
-    height:470px
+    height:499px
   }
   .menu-linksbtn ul{
+    width: 100%;
     background-color: transparent;
     padding: 0;
   }
@@ -406,6 +407,7 @@ header {
     background: linear-gradient(#184D66 0%, #082F42 100%);
 }
 .servicescontainer{
+    position: relative;
     width: 100%;
     max-width: 9999px;
     margin: auto;
@@ -473,16 +475,19 @@ header {
     --swiper-pagination-bullet-width: 10px;
     --swiper-pagination-bullet-height: 10px;
 }
+swiper-slider{
+  overflow: hidden;
+}
 .mySwiper {
     display: flex;
     justify-content: center;
     align-items: center;
-  width: 100%;
-  max-width: 1200px;
-  height: 100%;
-  cursor: grab;
-  margin: auto !important;
-  padding-bottom: 40px;
+    width: 100%;
+    max-width: 1200px;
+    height: 100%;
+    cursor: grab;
+    margin: auto !important;
+    padding-bottom: 40px;
 }
 .mySwiper:host{
     --swiper-theme-color: #fff;
@@ -493,11 +498,13 @@ header {
   font-size: 18px;
   background: #fff;
   justify-content: center;
+  width: 100%;
   max-width: 283px;
   border-radius: 30px;
   margin-left: 15px;
-  height: 555;
+  height: 555px;
   margin-bottom: 50px;
+  overflow: hidden;
 }
 .swiper1 img {
   width: 100% !important;
@@ -532,6 +539,9 @@ header {
         gap: 28px;
         font-size: 12px;
         padding-left: 5px;
+    }
+    .mySwiper {
+        max-width:370px;
     }
 }
 .bg-blue button, .reviewscontainer button{
