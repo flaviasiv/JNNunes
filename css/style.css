@@ -28,7 +28,7 @@ header {
     right: 0;
     width: 100%;
     height: 95px;
-    max-width: 1440px;
+    max-width: 9999px;
     margin: auto;
     align-items: center;
 }
@@ -38,29 +38,8 @@ header {
     align-items: center;
     position: relative;
     background-color: transparent;
-    width: 200px;
+    width: 300px;
     height: auto;
-}
-.callnow{
-    display: flex;
-    flex-direction: column;
-    color: #082F42;
-    background-color: #fff;
-    border-radius: 30px;
-    justify-content: center;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 120%;
-    align-items: center;
-    text-align: center;
-    padding: 8px 10px;
-    width: 130px;
-    margin-left: 10px;
-    text-decoration: none;
-}
-.callnow p{
-    font-size: 14px;
 }
 .navbar{   
     z-index: 999;
@@ -75,7 +54,7 @@ header {
     width: 100%;
     max-width: 1400px;
     margin: auto;
-    padding: 20px 50px 20px 50px;
+    padding: 20px 0px;
 } 
 .menu-links{
     color:#fff;
@@ -83,7 +62,8 @@ header {
     justify-content: space-between;
     align-items: center;   
     width: 100%;
-    max-width: 1300px;
+    max-width: 1400px;
+    padding: 0 50px;
     margin: auto;
     align-items: center;  
 }
@@ -112,12 +92,12 @@ header {
     letter-spacing:1px
 }
 .menu-linksbtn a:hover{
-    color: #ffffffc5;
-    transition: 0.5s;
+    color: #082F42;
+    transition: 0.2s all ease-in-out;
 }
 .menusocial{
     right: 0;
-    width:295px;
+    width:355px;
     display: flex;
     text-align: right;
     justify-content:space-between;
@@ -137,33 +117,30 @@ header {
     cursor: pointer;
     align-items: center;
 }
-.menusocial .socialgettouch a{
-    color: #000;
-}
-.socialgettouch{
+.callnow{
     display: flex;
+    color: #082F42;
     background-color: #fff;
-    border-radius: 20px;
+    border-radius: 30px;
     justify-content: center;
     font-size: 16px;
     font-style: normal;
     font-weight: 700;
-    line-height: 150%;
+    line-height: 120%;
     align-items: center;
     text-align: center;
-    padding: 8px 10px;
-    width: 140px;
+    padding: 5px 3px;
+    width: 170px;
     text-decoration: none;
+    gap: 9px;
 }
-.socialgettouch:hover, .callnow:hover{
-    text-decoration: none;
-    transition: 0.5s ease-out;
-    letter-spacing: 0.3px;
+.callnow p{
+    font-size: 14px;
 }
 .logo-m{
     z-index: 9;
     display:block;
-    width: 60px;
+    width: 90px;
     }
 .menu-linksbtn a:hover,
 .menu-linksbtn a.active {
@@ -176,9 +153,12 @@ header {
     .nonebar{display: none;}
     .call-m{
         position: absolute;
+        z-index: 99;
         display:block;
         top: 20px;
+        left: 15px;
     }
+    .call-m img{width: 90px;}
   .box{
     width: fit-content;
     height: 0vh;
@@ -258,7 +238,7 @@ header {
     width: 100%;
     margin-left: 0;
     margin-right: 0;
-    padding-top: 50px;
+    padding-top: 40px;
     border-bottom-right-radius: 32px;
     border-bottom-left-radius: 32px;
     height:100%
@@ -298,7 +278,7 @@ header {
   .socialgettouch{
       display: flex;
       white-space: nowrap;
-      height: 41px;
+      height: 49px;
       gap: 8px;
       margin-bottom: 10px;
       border-radius: 20px;
@@ -491,7 +471,7 @@ swiper-slider{
     justify-content: center;
     align-items: center;
     width: 100%;
-    max-width: 1200px;
+    max-width: 1350px;
     height: 100%;
     cursor: grab;
     margin: auto !important;
@@ -502,15 +482,13 @@ swiper-slider{
 }
 .swiper1 {
   display: flex;
-  text-align: center;
   font-size: 18px;
-  background: #fff;
   justify-content: center;
   width: 100%;
-  max-width: 283px;
+  max-width: 313px;
+  height: 417px;
   border-radius: 30px;
   margin-left: 15px;
-  height: 555px;
   margin-bottom: 50px;
   overflow: hidden;
 }
@@ -522,23 +500,38 @@ swiper-slider{
   object-fit: cover !important;
   object-position: center;
 }
-.swiper1 h6{
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 24px;
-    text-align: center;
-    color: #003D5A;
-    margin-top: 25px;
+.cardinfos svg{
+    position: absolute;
+    top: 33px;
+    left: 24px;
 }
-.swiper1 p{
-    padding: 0 20px;
-    font-size: 14px;
+.cardinfos h6{
+    font-size: 24px;
+    position: absolute;
+    font-weight: 500;
+    line-height: 140%;
+    color: #fff;
+    max-width: 140px;
+    bottom: 75px;
+    left: 24px;
+}
+.servicesbtn{
+    position: absolute;
+    bottom: 24px;
+    left: 24px;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    border: none;
+    color: #fff;
+    border-radius: 16px;
+    padding: 10px 10px;
+    font-size: 16px;
     font-weight: 600;
-    line-height: 18px;
-    text-align: center;
-    color: #003D5A;
-    margin: auto;
-    margin-top: 12px;
+    background-color: transparent;
+    border: 1px solid #fff;
+    cursor: pointer;
+    width: 150px;
 }
 @media screen and (max-width:900px) {
     .listareas{
@@ -552,7 +545,7 @@ swiper-slider{
         margin-left: 52px;
     }
 }
-.bg-blue button, .reviewscontainer button{
+.contactbtn, .reviewscontainer button{
     display: flex;
     justify-content: center;
     list-style: none;
@@ -1267,7 +1260,7 @@ footer{
 .footergrid{
     display: flex;
     width: 100%;
-    max-width: 900px;
+    max-width: 1000px;
     margin: auto;
     justify-content: space-between;
     padding: 50px;
@@ -1276,8 +1269,7 @@ footer{
     display: flex;
     justify-content: space-between;
     width: 100%;
-    max-width: 500px;
-    gap: 15px;
+    max-width:600px;
 }
 .footermenu1{
     display: flex;
@@ -1412,8 +1404,105 @@ footer{
         margin-bottom: 10px;
     }
 }
+.popuptest{
+    position: relative;
+    width: 100%;
+    max-width: 9999px;
+    margin: auto;    
+    padding: 50px 50px 0;
+}
+.popupgrid{
+    display: flex;
+    width: 100%;
+    max-width: 1400px;
+    margin: auto;
+    justify-content: center;
+}
+.popup .content{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    max-width: 680px;
+    z-index: 99;
+    gap: 32px;
+    padding: 200px 30px 100px 30px;
+    color: #fff;
+    font-family: 'Urbanist';
+}
+.popupimg{
+    width: 100%;
+    max-width: 700px;
+    margin: auto;
+    flex-shrink: 1;
+}
+.callnowpopup{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    padding: 8px 6px;
+    color:#003D5A;
+    background-color: #fff;
+    border-radius: 72px;
+    width:180px;
+}
+.callnowpopup a{
+    display: flex;
+    font-size: 16px;
+    font-weight: 800;
+    gap: 9px;
+    line-height: 100%;
+    align-items: center;
+    text-decoration: none; 
+}
+.callnowpopup:hover svg{
+    fill: #fff;
+    transition: 0.2s all ease-in-out;
+}
+.popup .content .popttlbtn{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.callnowpopup{
+    margin-left: 0;
+}
+.popup .content h1{
+    display: flex;
+    flex-direction: column;
+    font-size: 74px;
+    font-weight: 900;
+    line-height: 100%;
+}
+.popup .content p{
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%;
+}
+@media screen and (max-width:800px) {
+    .popuptest{padding: 0 0 30px;}    
+}
 
 a{
     text-decoration: none;
     color: inherit;
+}
+.callnow:hover, .contactbtn:hover, .form button:hover{
+    text-decoration: none;
+    background-color: #082F42;
+    color: #FFF;
+    transition: 0.2s ease-in-out;
+}
+.servicesbtn:hover{
+    color: #082F42;
+    background-color: #FFF;
+    transition: 0.2s ease-in-out;
+}
+.callnow:hover svg{
+    fill: white;
+    transition: 0.2s ease-in-out;
 }
