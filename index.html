@@ -47,12 +47,12 @@
             </div>
             <div class="menu-linksbtn">
               <ul>
-                <li><a href="#"> Home </a></li>
-                <li><a href="#services"> Services </a></li>
-                <li><a href="#about"> About </a></li>
-                <li><a href="#portfolio"> Gallery </a></li>
-                <li><a href="#reviews"> Reviews </a></li>
-                <li><a href="#faq"> FAQ </a></li>
+                <li><a rel="noopener" href="#"> Home </a></li>
+                <li><a rel="noopener" href="#services"> Services </a></li>
+                <li><a rel="noopener" href="#about"> About </a></li>
+                <li><a rel="noopener" href="#portfolio"> Gallery </a></li>
+                <li><a rel="noopener" href="#reviews"> Reviews </a></li>
+                <li><a rel="noopener" href="#faq"> FAQ </a></li>
               </ul>
             </div>
             <div class="menusocial">
@@ -122,6 +122,7 @@
         </div>
         <div class="bg-blue">
         <div class="servicescontainer" id="services">
+          <title>services</title>
           <div class="services">
             <div class="servicestitle reveal revealtext">
               <h2>WE COVER ALL YOU NEED</h2>
@@ -273,6 +274,7 @@
           <!-- IMAGEM ASSETS EM BG PARALLAX -->
         </div>
         <div class="aboutcontainer">
+          <title>About us</title>
           <div class="about" id="about">
             <div class="abouttext reveal revealtext">
               <h2>About us
@@ -310,6 +312,7 @@
         </div>
       </div>
         <div class="portifoliocontainer" id="portfolio">
+          <title>Gallery</title>
           <div class="portifolio">
             <div class="portifoliotitle">
                 <h2>Gallery
@@ -371,6 +374,7 @@
           </div>
         </div>
         <div class="reviewscontainer" id="reviews">
+          <title>Reviews</title>
           <div class="review">
           <div class="reviewstitle servicestitle">
             <h2>Reviews
@@ -396,7 +400,8 @@
             </div>
         </div>
       <div class="formgrid" id="contact">
-        <img src="./assets/formbg.png" alt="" class="bgs-web" draggable="false">
+          <title>Contact</title>
+          <img src="./assets/formbg.png" alt="" class="bgs-web" draggable="false">
         <img src="./assets/formbg-m.png" alt="" class="bgs-mob" draggable="false">
         <div class="forminfos">
           <img class="logofooter" src="./assets/logo-vid.png" alt="" draggable="false">
@@ -544,11 +549,20 @@
         </div>
         </div>
       </div>
-      <div class="rights"><p>© 2024 J&N Nunes. All rights reserved.</p></div>    
+      <div class="rights" id="placeholder"><p>© 2024 J&N Nunes. All rights reserved.</p></div>    
     </footer>
     <script src="./js/javascrip.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8.4.7/swiper-bundle.min.js"></script>
+    <script>// Step 1: Access the current URL
+      var currentURL = window.location.href;
+      
+      // Step 2: Check if there is a hash
+      if (window.location.hash) {
+          // Step 3: Remove the hash
+          window.history.pushState("", document.title, currentURL.split('#')[0]);
+      }
+    </script>
   </body>
 </html>
