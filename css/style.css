@@ -119,6 +119,20 @@ header {
     cursor: pointer;
     align-items: center;
 }
+.menusocial ul a svg{
+  fill: #003D5A;
+}
+.menusocial ul a svg circle{
+  fill: #fff;
+}
+.menusocial ul a:hover svg{
+  fill: #fff;
+  transition: 0.1s ease-in-out;
+}
+.menusocial ul a:hover svg circle{
+  fill: #082f42;
+  transition: 0.1s ease-in-out;
+}
 .callnow{
     display: flex;
     color: #082F42;
