@@ -1,4 +1,5 @@
-<html lang=”en”>
+<!DOCTYPE html>
+<html lang="en-US">
 <head>
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,6 +16,7 @@
   'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
   })(window,document,'script','dataLayer','GTM-NWLK3TQH');</script>
   <!-- End Google Tag Manager -->  
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <title>J&N Nunes - Complete Professional Cleaning: From Floor to Ceiling</title>
   <link rel="icon" type="image/x-icon" href="./assets/JNNunes-Logo.png">
   <meta name="author" content="Flavia Sigoli"/>
@@ -116,14 +118,16 @@
                   <input type="email" autocomplete="on" id="email" name="email" placeholder="Email address">
                   <input required type="phone" autocomplete="on" id="phone" name="phone" placeholder="Phone*">
                   <input type="address" autocomplete="on" id="address" name="address" placeholder="Address">
-                                  
-                  <select id="servicestype" required placeholder="Services" name="services" form="form">
-                    <option value="residential-cleaning">Residential Cleaning</option>
-                    <option value="Office-Cleaning">Office Cleaning</option>
-                    <option value="post-construction">Post Construction</option>
-                    <option value="Move-in-out">Move in-out</option>
-                  </select>
-                  <input type="hidden" name="_next" value="#http">
+                  <label for="servicestype">
+                    <select id="servicestype" required placeholder="Services" name="services" form="form">
+                      <option style="background-color: rgba(128, 128, 128, 0.603);" selected value="null">Select Service*</option>
+                      <option value="residential-cleaning">Residential Cleaning</option>
+                      <option value="Office-Cleaning">Office Cleaning</option>
+                      <option value="post-construction">Post Construction</option>
+                      <option value="Move-in-out">Move in-out</option>
+                    </select>
+                  </label>
+                  <input type="hidden" name="_next" value="https://jnnunes-cleaningservices.com/">
                   <button type="submit">Submit</button>
                 </form> 
             </div>
@@ -133,7 +137,8 @@
         <div class="servicescontainer" id="services">
           <title>services</title>
           <div class="services">
-            <div class="servicestitle reveal revealtext">
+            <div class="servicestitle" data-aos="fade-in"
+            data-aos-easing="ease-in-out">
               <h2>WE COVER ALL YOU NEED</h2>
               <p>Professional Cleaning Services in all Columbus surroundings, including:</p>
               <img class="goldsvg" src="./assets/gold.svg" alt="">
@@ -171,7 +176,8 @@
                 </ul>
               </div>
             </div>
-            <swiper-container class="mySwiper reveal" pagination="true" pagination-clickable="true" space-between="0" slides-per-view="auto" loop="true" navigation="true" autoplay-delay="5000">
+            <swiper-container class="mySwiper"  data-aos="fade-in"
+            data-aos-easing="ease-in-out" pagination="true" pagination-clickable="true" space-between="0" slides-per-view="auto" loop="true" navigation="true" autoplay-delay="5000">
               <swiper-slide class="swiper1">
                 <div class="servicescard">
                   <img src="./assets/services1.jpg" alt="" draggable="false">
@@ -285,7 +291,8 @@
         <div class="aboutcontainer">
           <title>About us</title>
           <div class="about" id="about">
-            <div class="abouttext reveal revealtext">
+            <div class="abouttext" data-aos="fade-in"
+            data-aos-easing="ease-in-out">
               <h2>About us
               <img class="goldsvg" src="./assets/gold.svg" alt="">                
               </h2>
@@ -302,15 +309,18 @@
                 <!-- <img class="aboutimgbg" src="./assets/     HRSCleaning-photo.png" alt=""> -->
               </div>
                 <div class="preferencegrid">
-                  <div class="preferencecard reveal" id="preferencecard1">
+                  <div class="preferencecard"  data-aos="fade-in"
+            data-aos-easing="ease-in-out" id="preferencecard1">
                     <img src="./assets/preference1.png" alt=""      draggable="false">
                     <h5>High Quality in <br>Cleaning Services</h5>
                   </div>
-                  <div class="preferencecard reveal" id="preferencecard2">
+                  <div class="preferencecard"  data-aos="fade-in"
+            data-aos-easing="ease-in-out" id="preferencecard2">
                     <img src="./assets/preference2.png" alt=""      draggable="false">
                     <h5>Fair Prices</h5>
                   </div>
-                  <div class="preferencecard reveal" id="preferencecard3">
+                  <div class="preferencecard"  data-aos="fade-in"
+            data-aos-easing="ease-in-out" id="preferencecard3">
                     <img src="./assets/preference3.png" alt=""      draggable="false">
                     <h5>Qualified Cleaning <br>Professionals</h5>
                   </div>
@@ -328,7 +338,8 @@
                 <img class="goldsvg" src="./assets/gold.svg" alt=""> 
                   </h2> <br>
             </div>
-            <swiper-container class="mySwiper2 reveal" pagination="true" pagination-clickable="true" space-between="20" slides-per-view="auto" loop="true" navigation="true" autoplay-delay="5000">
+            <swiper-container class="mySwiper2"  data-aos="fade-in"
+            data-aos-easing="ease-in-out" pagination="true" pagination-clickable="true" space-between="20" slides-per-view="auto" loop="true" navigation="true" autoplay-delay="5000">
                <swiper-slide class="swiper2">
                 <div class=" portifoliocard">
                   <img src="./assets/1_4x.webp" alt="" draggable="false">
@@ -389,7 +400,8 @@
             <h2>Reviews
               <img class="goldsvg" src="./assets/gold.svg" alt="">   
             </h2>
-            <div class="reveal" id="preferencecard4">
+            <div data-aos="fade-in"
+            data-aos-easing="ease-in-out" id="preferencecard4">
               <a href="https://maps.app.goo.gl/c4kpKXJXZsfUe7k88" target="_blank"><img class="selogoogle" src="./assets/selogoogle.png" alt="" draggable="false"></a>  
             </div>
           </div>
@@ -425,14 +437,16 @@
             <input type="email" autocomplete="on" id="email" name="email" placeholder="Email address">
             <input required type="phone" autocomplete="on" id="phone" name="phone" placeholder="Phone*">
             <input type="address" autocomplete="on" id="address" name="address" placeholder="Address">
-                            
-            <select id="servicestype2" required placeholder="Services" name="services" form="form">
-            <option value="residential-cleaning">Residential Cleaning</option>
-            <option value="Office-Cleaning">Office Cleaning </option>
-            <option value="post-construction">PosConstruction</option>
-            <option value="Move-in-out">Move in-out</option>
-            </select>
-            <input type="hidden" name="_next" value="#http">
+            <label for="servicestype">
+              <select id="servicestype" required placeholder="Services" name="services" form="form">
+                <option style="background-color: rgba(128, 128, 128, 0.603);" selected value="null">Select Service*</option>
+                <option value="residential-cleaning">Residential Cleaning</option>
+                <option value="Office-Cleaning">Office Cleaning</option>
+                <option value="post-construction">Post Construction</option>
+                <option value="Move-in-out">Move in-out</option>
+              </select>
+            </label>
+            <input type="hidden" name="_next" value="jnnunes-cleaningservices.com">
             <button type="submit">Submit</button>
           </form> 
       </div>
@@ -446,7 +460,8 @@
               <small><img src="./assets/hover.svg" alt=""> touch the cards to flip</small>
         </div>
              <div class="maincontainer">
-        <swiper-container class="mySwiper4 reveal" pagination="true" pagination-clickable="true" space-between="10" slides-per-view="auto" loop="true" navigation="false">
+        <swiper-container class="mySwiper4"  data-aos="fade-in"
+            data-aos-easing="ease-in-out" pagination="true" pagination-clickable="true" space-between="10" slides-per-view="auto" loop="true" navigation="false">
             <swiper-slide>
               <div class="thecard swiper4">
               <div class="thefront">
@@ -563,16 +578,19 @@
     <script src="./js/javascrip.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8.4.7/swiper-bundle.min.js"></script>
     <script>
-    // Step 1: Access the current URL
-var currentURL = window.location.href;
+    // Access the current URL
+    var currentURL = window.location.href;
 
-// Step 2: Check if there is a hash
-if (window.location.hash) {
-    // Step 3: Remove the hash
-    window.history.pushState("", document.title, currentURL.split('#')[0]);
-}
+    // Check if there is a hash
+    if (window.location.hash) {
+        // Remove the hash
+        window.history.pushState("", document.title, currentURL.split('#')[0]);
+    }
+    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
     </script>
   </body>
 </html>

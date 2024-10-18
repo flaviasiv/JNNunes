@@ -635,7 +635,7 @@ swiper-slider{
     margin: auto;
     margin-top: 36px;
 }
-.reveal{
+/* .reveal{
     position: relative;
     transform: translateX(-150%);
     opacity: 0;
@@ -654,7 +654,7 @@ swiper-slider{
 .reveal.active.revealtext{
     transform: translateX(0%);
     opacity: 1;
-}
+} */
 @media screen and (max-width:1100px) {
     .parallaximg{
         height: 400px;
@@ -1104,7 +1104,7 @@ form {
 form input, textarea, select{
     width: 100%;
     list-style: none;
-    padding: 20px;
+    padding:0 10px;
     height: 40px;
     z-index: 9999;
 }
