@@ -95,7 +95,7 @@ header {
 }
 .menu-linksbtn a:hover{
     color: #082F42;
-    transition: 0.2s all ease-in-out;
+    transition: 0.1s ease-in-out;
 }
 .menusocial{
     right: 0;
@@ -416,6 +416,10 @@ header {
     max-width: 9999px;
     margin: auto;
     padding: 70px 0 0 0;
+    border-image: linear-gradient(to right, #8f6B29 10%, #FDE08D 60%, #DF9F28 100%) 1;
+    border-radius: 5px; /* this doesn't work */
+    border-top-width: 4px;
+    border-top-style: solid;
 }
 .services{
     display: flex;
@@ -447,7 +451,7 @@ header {
     align-items: center;
     text-align: center;
     justify-content: center;
-    font-size: 74px;
+    font-size: 60px;
     font-weight: 900;
     max-width: 550px;
     margin: auto;
@@ -557,8 +561,20 @@ swiper-slider{
         font-size: 12px;
         padding-left: 5px;
     }
+    .mySwiper{
+        gap: 10px;
+        padding: 0 10px 40px;
+    }
     .swiper1 {
-        margin-left: 52px;
+        width: 100%;
+        max-width: 100%;
+        margin: auto;
+        margin-bottom: 40px;
+    }
+    .swiper1 img {
+        display: block;
+        width: 100vw !important;
+        max-width: 100% !important;
     }
 }
 .contactbtn, .reviewscontainer button{
@@ -721,7 +737,7 @@ swiper-slider{
     border-radius: 20px;
     gap: 16px;
 }
-.preferencecard img{
+.preferencecard svg{
     width: 100%;
     margin: auto;
     max-width: 88px;
@@ -768,7 +784,7 @@ swiper-slider{
     .preferencecard:last-child{
         padding-bottom: 0;
     }
-    .preferencecard img{
+    .preferencecard svg{
         max-width: 73px;
     }
     .preferencecard h5{
@@ -809,7 +825,6 @@ swiper-slider{
     font-size: 32px;
     font-style: normal;
     font-weight: 700;
-    margin-bottom: 60px;
 }
 .portifoliotitle h2 svg{
     margin-top: 16px;
@@ -854,17 +869,22 @@ swiper-slide.swiper2 {
     padding: 50px 0;
 }
 swiper-container.mySwiper2 {
-  height: 440px;
+  height: 100%;
   cursor: grab;
   margin: 0 !important;
+  padding: 0 20px;
 }
 swiper-slide.swiper2 {
-  max-width: 410px;
   margin-left: 17px;
+    width: 100%;
+    max-width: 100%;
+    margin: auto;
+    margin-bottom: 0px;
 }
 .swiper2 img {
-  max-width: 450px !important;
-  margin: auto;
+    display: block;
+    width: 100vw !important;
+    max-width: 100% !important;
 }
 }
 .bgs-web{
@@ -1067,6 +1087,19 @@ swiper-slide.swiper2 {
     width:290px;
     margin-bottom: 50px;
 }
+.forminfos h2{
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 40px;
+    margin: auto;
+    color: #fff;
+}
+.forminfos p{
+    font-size:16px;
+    font-weight: 500;
+    margin: auto;
+    max-width: 400px;
+}
 .form {
     z-index: 9999;
     display: flex;
@@ -1188,7 +1221,16 @@ form button:hover{
     justify-content: center;
     font-size: 18px
 }
-
+.faqcontainer .neyp{
+    display: block;
+    max-width: 407px;
+    text-align: center;
+    margin: auto;
+    font-size:16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%; 
+}
 .mySwiper4{
     width: 100%;
     max-width: 1199px;
@@ -1273,9 +1315,9 @@ form button:hover{
 .thefront h6, .theback h6{
   color: #082F42;
   font-size: 18px;
-  font-weight: 800;
+  font-weight: 700;
   line-height: 120%;
-  letter-spacing: 1.5;
+  letter-spacing: 1.0;
   text-align: center;
 } 
 
@@ -1351,8 +1393,8 @@ footer{
     line-height: 130%;
 }
 .footermenu1 ul li a:hover {
-    color: #ffffffaf;
-    transition: 0.5s;
+    color: #D3C58D;
+    transition: 0.1s;
 }
 .footermenu1 ul, .hours ul{
     display: flex;
@@ -1396,6 +1438,16 @@ footer{
 }
 .footersocials ul a{
     text-decoration: none;
+}
+.footersocials ul svg path , .footersocials ul a:hover svg circle{
+    fill: #082F42
+}
+.footersocials ul svg circle, .footersocials ul a:hover svg path{
+    fill: #fff;
+}
+.footersocials ul a:hover svg{
+    border: 2px solid #fff;
+    border-radius: 50%;
 }
 .rights{
     position: relative;
@@ -1489,7 +1541,7 @@ footer{
     max-width: 680px;
     z-index: 1;
     gap: 32px;
-    padding: 200px 30px 100px 30px;
+    padding: 150px 30px 100px 30px;
     color: #fff;
     font-family: 'Urbanist';
 }
@@ -1534,8 +1586,8 @@ footer{
 .popup .content h1{
     display: flex;
     flex-direction: column;
-    font-size: 74px;
-    font-weight: 900;
+    font-size: 58px;
+    font-weight: 800;
     line-height: 100%;
     text-transform: uppercase;
 }
