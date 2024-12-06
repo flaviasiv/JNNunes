@@ -1452,19 +1452,26 @@ footer{
     border-radius: 50%;
 }
 .rights{
+    display: flex;
+    justify-content: space-between;
     position: relative;
     height: 81px;
     width: 100%;
-    max-width: 9999px;
+    max-width: 1400px;
     margin: auto;
-    padding: 34px 0;
+    padding: 34px;
     background-color: #082F42;
     align-items: center;
     text-align: center;
     border-top: 1px solid #D3C58D;
+    color: #D3C58D;
+}
+.rights ul{
+    display: flex;
+    gap: 10px;
+    list-style: none;
 }
 .rights p{
-    color: #D3C58D;
     font-size: 14.4px;
     font-weight: 500;
     line-height: 150%;
@@ -1512,10 +1519,11 @@ footer{
     }
     .rights{
         flex-direction: column;
-        padding: 40px 10px;
+        padding: 20px 10px;
+        font-size: 14px;
     }
     .rights p{
-        font-size: 12px;
+        font-size: 13px;
         margin-bottom: 10px;
     }
 }
