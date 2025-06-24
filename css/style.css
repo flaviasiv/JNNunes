@@ -157,6 +157,8 @@ header {
     z-index: 9;
     display:block;
     width: 90px;
+    height: 90px;
+    border-radius: 100%;
     }
 .menu-linksbtn a:hover,
 .menu-linksbtn a.active {
@@ -1067,7 +1069,7 @@ swiper-slide.swiper2 {
     width: 100%;
     max-width: 9999px;
     margin: auto;
-    max-height: 1100px;
+    max-height: 100%;
     margin: auto;
     padding: 0px 0;
     z-index: 9999;
@@ -1086,8 +1088,8 @@ swiper-slide.swiper2 {
     padding: 50px 0;
 }
 .forminfos .logofooter{
-    width:290px;
-    margin-bottom: 50px;
+    width:250px;
+    margin-bottom: 30px;
 }
 .forminfos h2{
     font-size: 25px;
@@ -1186,7 +1188,7 @@ form button:hover{
         max-height: 1070px;
     }
     .logofooter{
-        max-width: 250px;
+        max-width: 230px;
     }
     .bgs-mob{
         height: 1200px;
